@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/png;base64,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" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Covid-19</title>
+    <script type="module" crossorigin src="/covid-19/assets/index.f039dc32.js"></script>
+    <link rel="stylesheet" href="/covid-19/assets/index.93c359c3.css">
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="logo">
+        <img src="data:image/png;base64,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" alt="Logo" class="logo__img" />
+        <span class="logo__text">Covid-19</span>
+      </div>
+      <div class="nav__list">
+        <a href="#" class="nav__list-item nav__list-item--active">Overview</a>
+        <a href="#" class="nav__list-item">Contagion</a>
+        <a href="#" class="nav__list-item">Symptoms</a>
+        <a href="#" class="nav__list-item">Prevention</a>
+      </div>
+      <button class="btn btn--secondary">Contact</button>
+    </nav>
+
+    <section class="hero">
+      <div class="hero__typography">
+        <h1>
+          <span class="sub-heading">COVID-19 Alert</span>
+          <br />
+          Stay at Home quarantine To stop Corona virus
+        </h1>
+        <p class="p-3">
+          There is no specific medicine to prevent or treat coronavirus disease
+          (COVID-19). People may need supportive care to .
+        </p>
+        <button class="btn btn--primary">Let us help</button>
+      </div>
+
+      <img class="hero__img" src="/covid-19/assets/hero.8b3d90de.png" alt="Hero image" />
+    </section>
+
+    <section class="overview">
+      <div class="overview__typography">
+        <h2>
+          <span class="sub-heading">What is Covid-19</span>
+          <br />
+          Coronavirus
+        </h2>
+        <p class="p-2">
+          Corona viruses are a type of virus. There are many different kinds,
+          and some cause disease. A newly identified type has caused a recent
+          outbreak of respiratory illness now called COVID-19.Lauren Sauer,
+          M.S., the director of operations with the Johns Hopkins Office of
+          Critical Event Preparedness and Response
+        </p>
+        <button class="btn btn--tertiary">Learn more</button>
+      </div>
+      <img
+        class="overview__img"
+        src="/covid-19/assets/overview.089e48b4.png"
+        alt="Viruses"
+      />
+      <img
+        src="/covid-19/assets/virus-light-red.3511c41b.svg"
+        class="overview__virus overview__virus--1"
+      />
+      <img
+        src="/covid-19/assets/virus-light-red.3511c41b.svg"
+        class="overview__virus overview__virus--2"
+      />
+    </section>
+
+    <section class="contagion">
+      <div class="contagion__typography u-text-center">
+        <h2>
+          <span class="sub-heading">Covid-19</span>
+          <br />
+          Contagion
+        </h2>
+        <p class="p-1">
+          Corona viruses are a type of virus. There are many different kinds,
+          and some cause disease. A newly identified type
+        </p>
+      </div>
+      <div class="contagion__cards-container">
+        <div class="card card--highlighted u-text-center">
+          <img
+            class="card__img"
+            src="/covid-19/assets/air-transmission.6086e27e.png"
+            alt="Air transmission"
+          />
+          <h4>Air transmission</h4>
+          <p class="p-1">
+            Objectively evolve tactical expertise before extensible initiatives.
+            Efficiently simplify
+          </p>
+        </div>
+        <div class="card u-text-center">
+          <img
+            class="card__img"
+            src="/covid-19/assets/human-contacts.d8505d1b.png"
+            alt="Human contact"
+          />
+          <h4>Human contact</h4>
+          <p class="p-1">
+            Washing your hands is one of thesimplest ways you can protect
+          </p>
+        </div>
+        <div class="card u-text-center">
+          <img
+            class="card__img"
+            src="/covid-19/assets/contained-objects.343d27b4.png"
+            alt="Contained objects"
+          />
+          <h4>Contained objects</h4>
+          <p class="p-1">
+            Use the tissue while sneezing,In this way, you can protect your
+            droplets.
+          </p>
+        </div>
+      </div>
+      <img src="/covid-19/assets/virus-light-red.3511c41b.svg" class="contagion__virus" />
+    </section>
+
+    <section class="symptoms">
+      <div class="symptoms__typography u-text-center">
+        <h2>
+          <span class="sub-heading">Covid-19</span>
+          <br />
+          Symptomps
+        </h2>
+        <p class="p-1">
+          Corona viruses are a type of virus. There are many different kinds,
+          and some cause disease. A newly identified type has caused a recent
+          outbreak of respiratory
+        </p>
+      </div>
+      <img src="/covid-19/assets/symptoms.81e2fa07.png" alt="Covid-19 Symptoms" />
+      <img
+        src="/covid-19/assets/symptoms-effect-1.729ea8fe.png"
+        class="symptoms__effect symptoms__effect--1"
+      />
+      <img
+        src="/covid-19/assets/symptoms-effect-2.52b85353.png"
+        class="symptoms__effect symptoms__effect--2"
+      />
+    </section>
+
+    <section class="prevention">
+      <div class="prevention__typography u-text-center">
+        <h2>
+          <span class="sub-heading">Covid-19</span>
+          <br />
+          What should we do
+        </h2>
+        <p class="p-1">
+          Corona viruses are a type of virus. There are many different kinds,
+          and some cause disease. A newly identified type has caused
+        </p>
+      </div>
+      <div class="tip tip--viruses-container">
+        <div class="tip__typography">
+          <div class="tip__number">01</div>
+          <h3>Wear masks</h3>
+          <p class="p-1">
+            Continually seize impactful vortals rather than future-proof supply
+            chains. Uniquely exploit emerging niches via fully tested
+            meta-services. Competently pursue standards compliant leadership
+            skills vis-a-vis pandemic "outside the box" thinking. Objectively
+          </p>
+        </div>
+        <img src="/covid-19/assets/tip-mask.a1f0cd72.png" alt="Wash your hands" />
+        <img
+          src="/covid-19/assets/virus-green.82de3e67.svg"
+          class="tip__virus tip__virus--1"
+        />
+      </div>
+      <div class="tip tip--reverse">
+        <div class="tip__typography">
+          <div class="tip__number">02</div>
+          <h3>Wash your hands</h3>
+          <p class="p-1">
+            Continually seize impactful vortals rather than future-proof supply
+            chains. Uniquely exploit emerging niches via fully tested
+            meta-services. Competently pursue standards compliant leadership
+            skills vis-a-vis pandemic "outside the box" thinking. Objectively
+            Continually seize impactful vortals
+          </p>
+        </div>
+        <img src="/covid-19/assets/tip-soap.61faf4de.png" alt="Use nose - rag" />
+      </div>
+      <div class="tip">
+        <div class="tip__typography">
+          <div class="tip__number">03</div>
+          <h3>Use nose - rag</h3>
+          <p class="p-1">
+            Continually seize impactful vortals rather than future-proof supply
+            chains. Uniquely exploit emerging niches via fully tested
+            meta-services. Competently pursue standards compliant leadership
+            skills vis-a-vis pandemic "outside the box" thinking. Objectively
+          </p>
+        </div>
+        <img src="/covid-19/assets/tip-tissues.448c3fd9.png" alt="Avoid contacts" />
+      </div>
+      <div class="tip tip--reverse tip--viruses-container">
+        <div class="tip__typography">
+          <div class="tip__number">04</div>
+          <h3>Avoid contacts</h3>
+          <p class="p-1">
+            Continually seize impactful vortals rather than future-proof supply
+            chains. Uniquely exploit emerging niches via fully tested
+            meta-services. Competently pursue standards compliant leadership
+            skills vis-a-vis pandemic
+          </p>
+        </div>
+        <img src="/covid-19/assets/tip-avoid-contacts.aad2b237.png" alt="Wear marsks" />
+        <img
+          class="tip__virus tip__virus--2"
+          src="/covid-19/assets/virus-light-green.bf75a757.svg"
+        />
+        <img
+          class="tip__virus tip__virus--3"
+          src="/covid-19/assets/virus-red.673fe506.svg"
+        />
+      </div>
+    </section>
+
+    <section class="live-reports">
+      <div
+        class="
+          live-reports__btn-group
+          live-reports__btn-group--column
+          live-reports__map-settings
+        "
+      >
+        <button><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACiSURBVHgB7dWxFQFBEIDhfxBcqAQlaEEHlCDwEFmhUOSd6ELhdeA68VTgSriQwK7RgRtcNH8B+817u28HjK1Dfl6E4xhjPQytwmGUYNrn2S38ixx22GGHHf44WYb8ImD+7A3VECcD3TJ7IbaCEzIUZKMDV4l4pWWnYlcLht5rUW/pppPP9ZASQ/6qHXbYYYf/C9/JGr7MBJfFtokwy3hUGHsB6wckCXyWZBcAAAAASUVORK5CYII=" /></button>
+        <button><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAADCAYAAACEeL/nAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAA3SURBVHgBxc2xEQAQEATAO2OGcpSgG6HRgVikVdlHThdvG1i2sTp1C/ycDJsxSFWgZwxD2vjlAelRC3UdjfC/AAAAAElFTkSuQmCC" /></button>
+        <button><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAzCAYAAACXICiDAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJdSURBVHgBrZddbtNAFIXPjGOBkJDcHZQdhBVgJIxCkWj6iPqQZgUpKwBWgFiBk0blNW2feECKd9DugOwgFlRIJbVvx04TOzPjf39SZOXO+OQm34wdAyW4dZzu394bu8xcXhj2/u03mLhmnM1v3znzovksb3B54HRN4Dpdo5BeP//5y0OdDg2iU6UDxj6jTofLvm2Zq85vELPksdW/1d6e5/mo0qHx3+zrwiI6zzqnWefx7AEaZY0xsFGlwEiGOK2LbKysZaQN1MmQyZKjSMmTIaOTo3SYJ0NGJ0cJ5IQBSqKTsxO47PX2xSwb5VHk7AQa7P4LKiLL2QnkjL1C5UTYS9u2lMA/B86JOOyjBmk528AqMmTScuLAGjJktnLiwDoyZDZy4sBaMpREdCM5RiRD7L8TNOcpN/kdbyJDRsg5LLxJVYLEzxci/I7WoEl8+YqWjYHARgMYaJF3N2wQLHDdmWU8EQubUOo6qEnxgzvcDIdHC3b2Y9ZHaLiiWC9sN/gTZ2SMWgmLIIxaXTYE8vk94RItwYhNOFbBmAg+WiAwggsuzPggmqAh4uteDj8eLdZXG4QXaIoBNzpsb/TT86u52Io2aiDOWwyOP7xYN/dIIzlh8pMly6aBnLATjpXAunI2MpTA9Zsach5lbFD+fVWRk5aRNCVRRY7oxpNr6l6uICfgwdfCwLJyxId6aRmZgetiCTmcj3XlzOeUPDk6GUkzGeTJ0ckoDMyTo5NRGBjLEbtArmfJKAyMBynZo0lRL2ND7uNtxNn51Uwc+nF3oJvB8eFLNGU6ndmueJWZ+wBd1vBuj9K0PwAAAABJRU5ErkJggg==" /></button>
+      </div>
+      <div
+        class="
+          live-reports__btn-group
+          live-reports__btn-group--column
+          live-reports__search
+        "
+      >
+        <button><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMASURBVHgBvZd/UtpAFMe/b5F0bLEDN8gNxBOIo3aQf+oNak+AngC4AZ5APEHtH0VGbY0nqJ6g6QlgtD9mTNjX3UBCEEICpHz/2c3Oy+4n+/a9fSHMob/lkumQUQRznsA29amXu76+x5KiOIOn8l6JiGosuEhM+alGDAuCWrkvV+dYQBS3uLIoIblsENXnhZkK8bvyrsbg+tggs8WgB2YE20+CTbU72xOgTM3c5dUJFoWYANCLMxobnRsrapJuuWxmyK0Log+h4Vauff0R80KEAVTbI8iTXPtbCwk1dOGZmtX0BhLuSADxq7JfVM13H8AF7RTa8598vStZ6t8GIERHcWdEhPqfAjIpjhcB0Cp0OjYzj9zA3OyWSnnEQTwe7B6qxhyOtXKdxULNlz4/ajcbw8d8dn3tCHEQFDpQjsw0kIJcw22CuDd4oveIhxiGmAo/vZ1IQYULqwdJA5eq+We5RHT1gRxmQgbukKr4s98zXr3ajrISa5IDQiYsfQ+EJdX94vf7GVmIshMsyMR/ksqmvaAPNqPsBFj2sAIRI3Id0SdhhwyLSHNhGs1HMvMjyk7AcGw/lFT63ESKkhhBPBM9RNmJiVBSaRcpqHtYyguBQX5g2LNCXwyI5ak/kCVZRQoyno2qH/qqrc+y9SDeXn690LTeCPGxvg2xhPRuSpLHAwDYDsRdLIRnG7p0SNDZom7xblHRvx2Vgnwal4XH6omnym6TIHx32Ooe2ZknjfsAGF2G96qw2Yp7b6KyejzYa41VSKowcVjM/Bp9Lxivjap2wctimED1N+2rxlwQWi92ZGDIdKHSsKX8FoSaqjnNjMC2JD4cX5xVtFExKUhktf1Y3j8ShFpQISWQVxKqejR3edN8quzV1eK1JCCx/x0ejOBq+MumrG4z8bn7x20WLCtIz0lBYiF86UO3BtdUuXhT+aagzkqXIX9muX+/3rHsqPeSgCSGWEZxICuBiANZGcQskJVCTAOBgy2BFWujfVP3fwd0SDuZzEqKqqnS0eZX4P8AFhVkZdD1DkcAAAAASUVORK5CYII=" /></button>
+      </div>
+      <div class="live-reports__board">
+        <header class="live-reports__board-header">
+          <h3>Live Reports</h3>
+          <div class="live-reports__btn-group live-reports__btn-group--row">
+            <button><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAATCAYAAABGKffQAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC+SURBVHgBjdPBDcIwDAVQ20GcGSEjsEJHyBFxISMwChPkhDiWDVihI3SEnpFikxSCVNoS/1NUvS+1sQtQSQjtLlzbfT5jBVqzNY90tEmeSQVTRMSiCgL0TLFBLfQH16MWTj6wBr9YA0eshTlEGzoVmMMQ3RIcMRPfRWAoDwxQyFNbwu93TuMkMQ9E+CDp4pMb790ww9rC9J4rhfkE/xSWd2OlsLqivwUBuayuqD+6jjE25VoZuYdawq215U95ARsymGfu9Xv2AAAAAElFTkSuQmCC" /></button>
+            <button><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAATCAYAAABGKffQAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADISURBVHgBjdDBDYIwFAbg95qYeNAEN2AER+gBSOnJEXQSYAM3UJfgggkrsIFsQCIYLxAsBkkFSvuf+vK+P20KIFJwd//0vQNoggVj9oo0j36+buLkpMIESGNJ87Hi7kWJd3GStdBGJgX8HUruhAgYSLvJk1AedAWEUZYKE7xUmMWzhRbPStyl8t1U3E37MScq+OJeIEEQ33tDFRTLUILRNr6HaAq7M5rCP6yDAzaBX1wyhyLBVAe7kHpdZ0LkOjikoNR6M2qDJh9ULXUcZKgbjwAAAABJRU5ErkJggg==" /></button>
+          </div>
+        </header>
+        <div class="live-reports__list">
+          <div class="country">
+            <img
+              class="country__flag"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAjCAYAAAA9guKMAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOsSURBVHgB7VdbSFRRFF135lqmWVY4DUFlFhRJDvRS6WcCGYPMRqK++tBIoqCg6PHV8yPCqKiPQhrKCOoncrwqpAUJ5RtLRaHIJ0Lj9Z3lq2bmts/Oufnhp95xxAWHe2bfsw9n7b3XPnekffuuxfp82lNJgh0zhBy1HAbBrUnyWdnv1+7NJAGD4ZQ0b7QsJuLXxo1WOJ1JcLur0NrazSsyMpKwenU0nj8vw8jIOCIjw3H0qB09PUPIz6/Cf79E8qvW/dbeOA8DYZcDs4MHE5GSkkAzDXfuFLDtxIlUaJqGxsZ2VFR8RULCeiKWyLYAiX9+Np4H/Famp8JI6CTy88vh93spojXYtm09R/vhwyJYLNFoafmOpKTNFGkPXr36QO9+cFbi4qzsp2leetbomw4oJTASksNxVRMTQUAMm20TcnIyuXwOHbrJUT95Mo0ivhsFBTV49KgIEono2bNzXGoXL+ahoaEFJpPMQ8BAYTP0TAQO0ds7DI9ngKNtNi/id6o6yGREzcvyYrZ5PIOIiFjE62U5HMGETiI9fReOH0/B48elyMy8SxaJMnKMymk5Tp/OxevXH2G1rsTLl+fQ1qbi0qUnEPrJyNiD7GwHXK53UJRa3stW/xZGwhSYxMQsp3LSWANmcxhnITY2huzLqAOtYZvVuoqjb7FE8XsxxHqRJbEuWNA1sWSJGfHxa9HR0UNZSaanivr6Fq770VEva0JRqmldGGWiGw7HTiauKJVE1oLm5i6Mjfl4U1diJIyEXk7ioNXV35CcvAVpadvZ5nTeQl/fT5w5cwB2ezxn6sEDRXBHVtZeXtPU1IHKyi+sJyF4gQGlFEZCJ7F0aThnor1dpS5URcIeRlRUBEe5sLCWSsaPoqI6ar9xLHqXq5Qz0dbWQ8S3ciZERxNYke6AkdBJHD6cjP37t6O4uI4PKKKam3uKhX358gvcv68QgQ24fv0IHXaCbu67rIXs7FTy20EEPyEv7z3vte7GBRgJnURv7xAfSkQ50EZVdYiF3Nf3i9toZ2c/t9up7Vdcin6/n+3BwpTL7g8NH9W2mUYYv/R6JyDaqDiwJJm4pHy+38JNJzqdX1AvO3HQKV13MtrapB38FK126prp/IyGVFLyWcMMY+e4CiMhaUIIIQ7Z6C/O2YBUb0sJ+UwET40ziHmhiXmRCbnrym2EOuaFsGWjvzhnAwvCnitYuOzmCqT+gjchn4mFr9i5AiFs8e/ejtCF26RJ3iz6C+pGaKKMzn/2L/Dvl3nDvZkkAAAAAElFTkSuQmCC"
+              alt="USA flag"
+            />
+            <span class="country__name">USA</span>
+            <span class="country__patients-number">100,392</span>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAOCAYAAADABlfOAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADnSURBVHgBrZJPDsFAFMbfe0zCQlI3qBPgBiP+tV05ihtwA27gCHbShQQn4QYkikVTI1Npomj7qn67mfnml7x8D4DJzZImN0uc0NnpLQMSe8/ubzj5TOnFGUwQcBQeEKRnD2aFpFqoQE1jl6jGnj0cp/3DpIez1ZNImDiuuqtOzV1v2dKjZZmCAi00IZmTfy+16657eH+gH4UaQ+eOUhqZUoHBgiGMMEVVLFOluhjdMOThy0bQq/CjabY4vhFhUVlNc4k2AnMUw+HkX/0GAQXGn4Qao1wpt57jO905KmpCQRSqXW21nj4AW1hUjBmsc7QAAAAASUVORK5CYII=" />
+          </div>
+          <div class="country">
+            <img
+              class="country__flag"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAjCAYAAAA9guKMAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACzSURBVHgB7dkhDsJAEIXht9shtchKNEdA9QiEE9Aj9BwVGDxXqCNB9U6oTWez0KQnGDVt3qdGzq9faN73U1XyC0ALg+Hc4dZcYJU+E77DExYBGOMsvUjJj2IMWEglqOsaVlkEVv+/r/mgx7gc2LY2YgcY4QUjvGCEF4zwghFeMMILRnjBCC8Y4QUjvGCEF4zwghFeMMKL3URM2LBQMEoOVbcOLaadQrMipQSrWRVmBVNU7X/Lbytlw1N7MQAAAABJRU5ErkJggg=="
+              alt="USA flag"
+            />
+            <span class="country__name">Italy</span>
+            <span class="country__patients-number">86,498</span>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAOCAYAAADABlfOAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADnSURBVHgBrZJPDsFAFMbfe0zCQlI3qBPgBiP+tV05ihtwA27gCHbShQQn4QYkikVTI1Npomj7qn67mfnml7x8D4DJzZImN0uc0NnpLQMSe8/ubzj5TOnFGUwQcBQeEKRnD2aFpFqoQE1jl6jGnj0cp/3DpIez1ZNImDiuuqtOzV1v2dKjZZmCAi00IZmTfy+16657eH+gH4UaQ+eOUhqZUoHBgiGMMEVVLFOluhjdMOThy0bQq/CjabY4vhFhUVlNc4k2AnMUw+HkX/0GAQXGn4Qao1wpt57jO905KmpCQRSqXW21nj4AW1hUjBmsc7QAAAAASUVORK5CYII=" />
+          </div>
+          <div class="country">
+            <img
+              class="country__flag"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAjCAYAAAA9guKMAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJaSURBVHgB7ZgxbNNAFIb/s31OE7el0EYgUdqsdGKo2AiMsCGYO7CxdkQqMxsIJjaGzqBsZaxg7c5KuyCU0paKtLGd+Lh3UlK3cX2pZF/jKp8UWXq5nO6/9/5357D9e7dqNuefBMMjFAwGNLpBuOrYLn8nUDwBhFz3U5mAGfb3/h2BgmPhCjAWMSqMRQxMtljCZZCZCFax4L2eB69PGxeTmQj3yXUlpPzyJviyB5NcSMTEylzyJHNcCmCImiG62z78z3swyYVEOMuTsO+WB+LRboj2+i5ar3bQ2WrBNEOLsJfKsKo8tVTEUSSz8Odkcpkhx0BpDS3CfTCtnvzhNf3YxzOorM3De7MA24DJnaSg6jDV019RJggyL3mDdr2HaEUIvx+qJxF8PUDp+SyYZ8nyq8hIvh5JFNHZ+icXcUN1nCTicTLy0dtffQHxeLTdVmKZLCshfZMXqbdYysjESlXtaBLBxj78L3sDAgjyD3UrE2iv4rSYyfe1gTgZ2HQrPQ+tsVnVSY5X0n+qPEHnh9yEvNGK6HUlIvh22C8RXZdy61OY+lCDt3YbeePoBlBXooUff/yN7o9jVV5kevILHXwUO4sVy0AohedNqghroaQW2V5v9s3bF/TTh7OULIJKkMbYiy7U63zOpBqbdlOkdBjqWmc7E3klfoaYINUTQtMi4wKo7OiKQae0abSeGJbSs1lVXkRShvIks/cJOvh68Lr+fpUlmWUianZUAwg2DmCa7ETs+Ajk5zIY/9sxKoxFjApXQwQT2ESBERANq2vbL+TlqYECIoTYFJaz+h+0X801Eoqw8wAAAABJRU5ErkJggg=="
+              alt="USA flag"
+            />
+            <span class="country__name">China</span>
+            <span class="country__patients-number">81,340</span>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAOCAYAAADABlfOAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEKSURBVHgBrZMxUgJBEEV/9wZotngCDqCBmeGSqCkZmnGErTVXIyP1CiSCobEGGJpJwAHmBOyYUWXBZ5aqraKWARbYF8109/zqqv9H4Dh5ub0nGeFABDocJ2+xhK/tSKkDVMRM/s8VOBoSsKgAggYIrNq4azmdtVABnLJj43cTZJfJ18jULk//ROQa+0I8pnf9bnYM8trkc/RzfHVWd8cL7IoTHCe9h/wqxX79+WbgNo5QVo/8TpN+c7mmK0NaaznjDEotSENlp1gX37CLWUOov64ZYpOgsJkZU+yp70E2uC0RudO+XrDu0cZELDm9k+hC2JeIgtM+BCXIE0HiI016lXyUBeFTu1F2dg6lDHMYDfuPtgAAAABJRU5ErkJggg==" />
+          </div>
+          <div class="country">
+            <img
+              class="country__flag"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAjCAYAAAA9guKMAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHKSURBVHgB7ZnPS8JgGMe/m1MrZ5ggGnQICyyIOtSlTh1Cr2LHIOgUdBPqr4joT4iKriEEHTpEpzp0Uq9ZFEXaQcEc5Zyu9x0kDGrM09537APi3m2H97PnfZ5nP4SnxMykrktHOrAK/iiIgpaXerp0CD4FKFkSgIhQic/p4BwRLsCTYAVPghVcISHFdiXwjhRO+8A7A4VBqWqoFlUEZBHRKQmhBBtRtD2LRqWDy+1afxyK+5A9GwcL2E7sWvHbNFZqXfLTwAKCXlz8996psPFuTHbtIIb4QvDPc0rHTZRPm1jaiSCVk+EElsuJClBaJBfKJ03y3zUdn12X+9GoV1Q4he2coCJGDohDQCSD2v0zHs+vwQIDlBcBJRINiOSKyy9Q3uoIhESorR6cxrZEQBbwevuFxgMRwQXGpv2YWBlmQsJ2dZITPizvRQ2ZZHrEEKBllgVsS/jJ0qHNLpULY35z1EhomZFmZylBrzolSDp0MhMycuKj2MbdfoP0jbap7NL8cArLPtEh611VemTZSKYx5XcfhUaFSvhlZ0QsJXjBHc8Tn1dd8I733okVPAlW8CRYwR0SpL7egGN0+qHFJ2hbZKsADqEBIPPP/wDh6pi0Zay+2QAAAABJRU5ErkJggg=="
+              alt="USA flag"
+            />
+            <span class="country__name">Span</span>
+            <span class="country__patients-number">64,059</span>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAOCAYAAADABlfOAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADnSURBVHgBrZJPDsFAFMbfe0zCQlI3qBPgBiP+tV05ihtwA27gCHbShQQn4QYkikVTI1Npomj7qn67mfnml7x8D4DJzZImN0uc0NnpLQMSe8/ubzj5TOnFGUwQcBQeEKRnD2aFpFqoQE1jl6jGnj0cp/3DpIez1ZNImDiuuqtOzV1v2dKjZZmCAi00IZmTfy+16657eH+gH4UaQ+eOUhqZUoHBgiGMMEVVLFOluhjdMOThy0bQq/CjabY4vhFhUVlNc4k2AnMUw+HkX/0GAQXGn4Qao1wpt57jO905KmpCQRSqXW21nj4AW1hUjBmsc7QAAAAASUVORK5CYII=" />
+          </div>
+          <div class="country">
+            <img
+              class="country__flag"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAjCAYAAAA9guKMAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACdSURBVHgB7daxDQIxDIVhG12E6GiuhybKGPQ0rMAI17EFI7BCRrgl2IP2IiUmt8Vz9L7K7S8XtqaULrXWj6rexJ9cSlmm1trbacDuEUI4a4zRxLmDDIARKBiBghEohoiY7tsm3ulvnnmxETACBSNQMAIFI1CM8TudXkfxTu175e+EgBEoGIGCESgGiVBZxTXLPcKefcrikdna17D8ASWsHfnJxrLKAAAAAElFTkSuQmCC"
+              alt="USA flag"
+            />
+            <span class="country__name">Germany</span>
+            <span class="country__patients-number">50,871</span>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAOCAYAAADABlfOAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADnSURBVHgBrZJPDsFAFMbfe0zCQlI3qBPgBiP+tV05ihtwA27gCHbShQQn4QYkikVTI1Npomj7qn67mfnml7x8D4DJzZImN0uc0NnpLQMSe8/ubzj5TOnFGUwQcBQeEKRnD2aFpFqoQE1jl6jGnj0cp/3DpIez1ZNImDiuuqtOzV1v2dKjZZmCAi00IZmTfy+16657eH+gH4UaQ+eOUhqZUoHBgiGMMEVVLFOluhjdMOThy0bQq/CjabY4vhFhUVlNc4k2AnMUw+HkX/0GAQXGn4Qao1wpt57jO905KmpCQRSqXW21nj4AW1hUjBmsc7QAAAAASUVORK5CYII=" />
+          </div>
+          <div class="country">
+            <img
+              class="country__flag"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAjCAYAAAA9guKMAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIjSURBVHgB7ZnPSxRhGMe/77szbq77wy2WMhG9SFY3oZCgMrxIp27toaAO2cEKvPQfdOrQpVOXLh2KiKygH4dIw1t0CJICKXX9seCu6K67OjM7M6/zvrs7KF598R2ZDwzPPN/3eYb58vDODAwZ+Jbtge08B8ggAgZhGGe6NaaxmvuEkOAZ4DCCa7D1dkr4SaAhgxSHgNCEKoQmVOFQmNCaJ72JHnQcySBvFDCzMSe0S5lzIk6XZrBqrSOutaE/fUZo3ws/lOnzJ3HCW2gW7DTGj6PRlMg7GjX8UKlPGz5+ETRC0Rv3FlozSGgxxPVY46LdIlZqVdF4rCXta1dPXq7XHHCfa7sghmGwaDSKoGJZVvh0UgYpJkovXqL46PEujedrT59BCnxP7DezA1eYNZdj1ckplr9zn228/yjyf339bL8xTZNJmYS7XoLe3eVN5JWYSuXDJ5HLQtqeqM3n9uQ0lYQMNEggPXoXy9dv+TfNDfCc6zKQMon0vRG0j47AKZVFbuUWkLyRRepmFjIIX3aqQPIPHrIIpWg52we9qxP24hLM33/FYtvwkIjGz19wCkXQZAKtF84Lrfr5q4gH3ee6DrStN+/EYqw8BFY+DXP6Dza/1Bt4MWdrcgqWp/MLRBqbtfL6rTJ9/tPJXlhqxOWmJArr2qKIzkrR11TqI/87TzEEnPADUBVCE6oQmlAFbmICAYZ5P1oocchtQtg4gskEdcnYNrDpCUTEfw+nAAAAAElFTkSuQmCC"
+              alt="USA flag"
+            />
+            <span class="country__name">Iran</span>
+            <span class="country__patients-number">32,332</span>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAOCAYAAADABlfOAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADnSURBVHgBrZJPDsFAFMbfe0zCQlI3qBPgBiP+tV05ihtwA27gCHbShQQn4QYkikVTI1Npomj7qn67mfnml7x8D4DJzZImN0uc0NnpLQMSe8/ubzj5TOnFGUwQcBQeEKRnD2aFpFqoQE1jl6jGnj0cp/3DpIez1ZNImDiuuqtOzV1v2dKjZZmCAi00IZmTfy+16657eH+gH4UaQ+eOUhqZUoHBgiGMMEVVLFOluhjdMOThy0bQq/CjabY4vhFhUVlNc4k2AnMUw+HkX/0GAQXGn4Qao1wpt57jO905KmpCQRSqXW21nj4AW1hUjBmsc7QAAAAASUVORK5CYII=" />
+          </div>
+        </div>
+      </div>
+      <img class="live-reports__map" src="/covid-19/assets/map.a5a0bfb9.png" alt="Map" />
+    </section>
+
+    <section class="contact">
+      <h2 class="contact__header">Have Question in mind? Let us help you</h2>
+      <div class="contact__input">
+        <input type="email" placeholder="snmonydemo@gmail.com" />
+        <button type="submit" class="btn btn--primary">Send</button>
+      </div>
+      <img
+        src="/covid-19/assets/virus-red-transparent.920f3745.svg"
+        class="contact__virus contact__virus--1"
+      />
+      <img
+        src="/covid-19/assets/virus-red-transparent.920f3745.svg"
+        class="contact__virus contact__virus--2"
+      />
+    </section>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="logo">
+          <img src="data:image/png;base64,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" alt="Logo" class="logo__img" />
+          <span class="logo__text">Covid-19</span>
+        </div>
+        <div class="footer__list">
+          <a href="#" class="footer__list-item">Overview</a>
+          <a href="#" class="footer__list-item">Symptoms</a>
+          <a href="#" class="footer__list-item">Prevention</a>
+          <a href="#" class="footer__list-item">Treatment</a>
+        </div>
+        <div class="footer__social-media">
+          <a href="#">
+            <img src="/covid-19/assets/facebook-logo.47ae09ef.svg" alt="Facebook logo" />
+          </a>
+          <a href="#">
+            <img src="/covid-19/assets/youtube-logo.06cc2bc2.svg" alt="Youtube logo" />
+          </a>
+          <a href="#">
+            <img src="/covid-19/assets/vimeo-logo.7bbf6107.svg" alt="Vimeo Logo" />
+          </a>
+          <a href="#">
+            <img src="/covid-19/assets/twitter-logo.d6b7cb81.svg" alt="Twitter logo" />
+          </a>
+        </div>
+      </div>
+      <p class="footer__copyright u-text-center">
+        2020 @ All rights reserved by pixelspark.co
+      </p>
+    </footer>
+  </body>
+</html>
