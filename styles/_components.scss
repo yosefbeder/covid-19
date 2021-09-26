@@ -1,0 +1,43 @@
+.logo {
+  display: flex;
+  align-items: center;
+
+  &__img {
+    margin-right: 1.4rem;
+  }
+
+  &__text {
+    text-transform: uppercase;
+    color: $color-green-dark;
+    font-size: 1.9rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+  }
+}
+
+.btn {
+  &--primary {
+    font-size: 2.4rem;
+    color: $color-white;
+    background-color: $color-red;
+    text-transform: capitalize;
+    padding: 2.75rem 6.15rem;
+    border-radius: 6.5rem;
+  }
+
+  &--secondary {
+    font-size: 1.8rem;
+    color: $color-red;
+    padding: 1.65rem 4.25rem;
+    border: 2px solid $color-red-light;
+    border-radius: 4.6rem;
+  }
+
+  &--tertiary {
+    font-size: 2rem;
+    color: $color-red-light;
+    background-color: rgba($color-red-light, 0.15);
+    padding: 1.95rem 4.35rem;
+    border-radius: 6.5rem;
+  }
+}

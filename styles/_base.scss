@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-image: linear-gradient(
+    rgba(255, 241, 241, 0) -50%,
+    rgba(255, 241, 241, 0.5),
+    #fff,
+    rgba(255, 241, 241, 0.5),
+    rgba(255, 241, 241, 0) 165%
+  );
+}

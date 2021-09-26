@@ -1,0 +1,36 @@
+.symptoms {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  max-width: max-content;
+  margin: 0 auto 11.8rem auto;
+
+  &__typography {
+    & > h2 {
+      margin-bottom: 3.1rem;
+    }
+
+    & > p {
+      max-width: 71.6rem;
+    }
+  }
+
+  &__effect {
+    position: absolute;
+
+    &--1 {
+      // transform: rotate(-21.24deg);
+      right: calc(100% + 11.6rem);
+      bottom: 16.5rem;
+    }
+
+    &--2 {
+      left: calc(100% + 9.8rem);
+      top: 100%;
+      transform: translateY(-90%);
+    }
+  }
+}

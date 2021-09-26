@@ -1,0 +1,122 @@
+.live-reports {
+  position: relative;
+
+  display: flex;
+  flex-direction: row-reverse;
+
+  max-width: $max-width;
+  margin: 0 auto 14.9rem auto;
+
+  &__board {
+    display: flex;
+    flex-direction: column;
+
+    padding: 5.5rem;
+    background: linear-gradient(360deg, #fffbfb -79.45%, #fdfdfd 105.35%);
+    box-shadow: 0px 7px 95px rgba(0, 0, 0, 0.07);
+    height: 63.5rem;
+    min-width: 50.4rem;
+    max-width: 50.4rem;
+  }
+
+  &__board-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 5.4rem;
+  }
+
+  &__btn-group {
+    display: flex;
+    border-radius: 0.6rem;
+    box-shadow: 0px 0.5rem 5rem rgba(87, 1, 0, 0.1);
+    background-color: $color-white;
+
+    &--row {
+      height: 4.9rem;
+      align-items: center;
+
+      & > button {
+        padding: 0 1.7rem;
+
+        &:not(:last-child) {
+          border-right: 2px solid $color-gray-light;
+        }
+      }
+    }
+
+    &--column {
+      flex-direction: column;
+
+      & > button {
+        padding: 2.2rem 2.8rem;
+
+        &:not(:last-child) {
+          position: relative;
+
+          &::before {
+            position: absolute;
+            bottom: -0.1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            content: '';
+            height: 0.1rem;
+            width: 0.9rem;
+            background-color: $color-gray;
+          }
+        }
+      }
+    }
+  }
+
+  &__list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__map {
+    align-self: flex-end;
+  }
+
+  &__map-settings {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__search {
+    position: absolute;
+    top: 0;
+    right: 54rem;
+
+    & > button {
+      padding: 2.2rem 2.4rem;
+    }
+  }
+}
+
+.country {
+  display: flex;
+  align-items: center;
+  font-family: $font-primary;
+  font-weight: 600; // 500
+
+  &__flag {
+    margin-right: 2.7rem;
+  }
+
+  &__name {
+    margin-right: auto;
+    font-size: 2.8rem; // 3.1rem
+    color: $color-green-dark;
+  }
+
+  &__patients-number {
+    font-size: 2rem; // 2.4rem
+    margin-right: 2.1rem;
+    color: $color-green-darker;
+  }
+}

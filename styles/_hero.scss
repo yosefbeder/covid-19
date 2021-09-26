@@ -1,0 +1,27 @@
+.hero {
+  display: flex;
+  align-items: center;
+
+  height: 65.9rem;
+
+  max-width: $max-width;
+  margin: 0 auto -1.7rem auto;
+
+  &__typography {
+    max-width: 64.1rem;
+    min-width: 64.1rem;
+
+    & > h1 {
+      margin-bottom: 2.9rem;
+    }
+
+    & > p {
+      margin-bottom: 5.4rem;
+    }
+  }
+
+  &__img {
+    align-self: flex-end;
+    margin-left: -1.85rem;
+  }
+}

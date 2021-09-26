@@ -1,0 +1,77 @@
+body {
+  font-family: $font-primary;
+}
+
+.sub-heading {
+  line-height: 1.22;
+  color: $color-red-light;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-transform: capitalize;
+  color: $color-green-darker;
+}
+
+h1,
+h2 {
+  font-family: $font-secondary;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 5.2rem;
+  line-height: 1.39;
+
+  & > .sub-heading {
+    font-size: 3.2rem;
+    line-height: 1.22;
+  }
+}
+
+h2 {
+  font-size: 5rem;
+  line-height: 1.19;
+
+  & > .sub-heading {
+    font-size: 2.9rem;
+    line-height: 1.24;
+  }
+}
+
+h3,
+h4 {
+  font-family: $font-primary;
+  font-weight: 600; // 500
+  line-height: 1.47;
+}
+
+h3 {
+  font-size: 4.35rem; // 4.7rem
+}
+
+h4 {
+  font-size: 3.25rem; // 3.6rem
+}
+
+p {
+  color: $color-gray-dark;
+  text-transform: capitalize;
+  line-height: 2.15;
+}
+
+// the sizes aren't identical to the original design because I couldnt' find the
+.p-1 {
+  font-size: 1.6rem; // 1.8rem
+}
+
+.p-2 {
+  font-size: 1.8rem; // 2rem
+}
+
+.p-3 {
+  font-size: 2rem; // 2.4rem
+  line-height: 1.9;
+}
